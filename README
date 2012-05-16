@@ -1,0 +1,16 @@
+A simple script to find out what mobile main pages don't exist yet.
+
+Outputs a wikitext-formatted list of Wikimedia project sites that have a 
+mobile domain following the pattern http://<lang code>.m.<project name>.<tld> 
+and whether or not that project has a mobile-version of the main page
+configured.
+
+== Usage ==
+$ python check_wiki_main_page.py
+
+== Requirements ==
+* Python 2 (2.7+)
+* BeautifulSoup4 - http://www.crummy.com/software/BeautifulSoup/
+
+== ToDo ==
+* make found/missing output optional, perhaps with 'verbose' or 'debug' flag
